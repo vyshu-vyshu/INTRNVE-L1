@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - My Personal Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Main Section: Blog Posts -->
+    <main>
+        <section id="blog" class="blog-posts">
+            <article id="post1" class="post">
+                <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4" alt="Coding Image">
+                <h2>Blog Post Title 1</h2>
+                <p>This is the full content of the first blog post. It provides detailed information and insights on the topic.</p>
+                <a href="index.html" class="btn-read-more">Back to Home</a>
+            </article>
+
+            <article id="post2" class="post">
+                <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664" alt="Design Image">
+                <h2>Blog Post Title 2</h2>
+                <p>This is the full content of the second blog post. It delves into another topic related to design or creativity.</p>
+                <a href="index.html" class="btn-read-more">Back to Home</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved. | Designed by Me</p>
+    </footer>
+
+    <!-- Script for Mobile Menu Toggle -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

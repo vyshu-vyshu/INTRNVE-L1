@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Personal Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Main Section: About -->
+    <main>
+        <section id="about" class="about">
+            <h1>About Me</h1>
+            <img src="img/about.jpg" alt="About Me" class="about-image">
+            <p>Hello! I'm Vyshnavi, the creator of this blog. Welcome to my little corner of the internet where I share my thoughts, experiences, and insights on various topics that interest me.</p>
+            <p>With a passion for coding, design, and creativity, I started this blog to document my journey and connect with like-minded individuals. Here, you'll find posts on the latest trends in technology, tips on web development, and reflections on life and work.</p>
+            <p>Aside from blogging, I enjoy Dancing, and I'm always eager to learn new things. Whether you're here to pick up some tips, get inspired, or just enjoy some good reads, I hope you find something that resonates with you.</p>
+            <p>Feel free to reach out if you have any questions or just want to say hi. Thanks for stopping by!</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved. | Designed by Me</p>
+    </footer>
+
+    <!-- Script for Mobile Menu Toggle -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

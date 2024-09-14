@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">My Blog</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+        <div class="header-content">
+            <h1>Welcome to My Blog</h1>
+            <p>Sharing my thoughts on coding, design, and life.</p>
+            <a href="#blog" class="cta-button">Read the Blog</a>
+        </div>
+    </header>
+
+    <!-- Main Section: Blog Posts -->
+    <main>
+        <section id="blog" class="blog-posts">
+            <article class="post">
+                <img src="img/coding.jpg" alt="Coding Image">
+                <h2>Blog Post Title 1</h2>
+                <p>This is a short preview of the blog post content. Click to read more.</p>
+                <a href="#" class="btn-read-more">Read More</a>
+            </article>
+
+            <article class="post">
+                <img src="img/design.jpeg" alt="Design Image">
+                <h2>Blog Post Title 2</h2>
+                <p>Another preview of a blog post content. Click to read more.</p>
+                <a href="#" class="btn-read-more">Read More</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved. | Designed by Me</p>
+    </footer>
+
+    <!-- Script for Mobile Menu Toggle -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
